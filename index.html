@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포커 토너먼트 콘텐츠 포트폴리오</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* 기본 폰트를 Inter와 Noto Sans KR로 설정 */
+        body {
+            font-family: 'Inter', 'Noto Sans KR', sans-serif;
+        }
+        /* 동영상 플레이 버튼 등 가상 요소 스타일 */
+        .video-placeholder::after {
+            content: '\f04b'; /* Font Awesome play icon */
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3rem;
+            color: rgba(255, 255, 255, 0.7);
+            opacity: 0.8;
+            transition: all 0.2s ease-in-out;
+        }
+        .video-placeholder:hover::after {
+            color: white;
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+        .gif-placeholder::after {
+            content: 'GIF';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <div class="container mx-auto px-4 py-12 md:px-8 md:py-20">
+
+        <!-- 페이지 헤더 -->
+        <header class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-yellow-400 mb-4">
+                포커 토너먼트 콘텐츠 포트폴리오
+            </h1>
+            <p class="text-lg text-gray-400 max-w-3xl mx-auto">
+                하나의 포커 대회 영상 원본이 각 소셜 미디어 플랫폼의 특성에 맞춰 어떻게 다르게 재가공되는지 보여주는 예시입니다.
+            </p>
+        </header>
+
+        <!-- 1. 원본 영상 (YouTube) -->
+        <section class="mb-20">
+            <h2 class="text-2xl md:text-3xl font-semibold mb-6 flex items-center">
+                <i class="fa-brands fa-youtube text-red-500 mr-3"></i>
+                원본 영상 (YouTube)
+            </h2>
+            <div class="aspect-video w-full max-w-4xl mx-auto bg-black rounded-2xl shadow-2xl shadow-red-500/20 overflow-hidden">
+                <!-- 실제 유튜브 영상 iframe을 여기에 삽입하세요. -->
+                <iframe 
+                    width="100%" 
+                    height="100%" 
+                    src="https://www.youtube.com/embed/KkqwcWT4MF4" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <p class="text-center text-gray-500 mt-4">
+                포커 토너먼트의 주요 핸드와 결정적인 순간들을 담은 하이라이트 영상입니다.
+            </p>
+        </section>
+
+        <!-- 2. 소셜 미디어 활용 예시 -->
+        <section>
+            <h2 class="text-2xl md:text-3xl font-semibold mb-8 text-center">소셜 미디어 활용 예시</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <!-- Instagram Post 카드 -->
+                <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-3xl p-4 flex flex-col transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex items-center mb-3">
+                        <i class="fa-brands fa-instagram text-2xl mr-3 bg-gradient-to-r from-yellow-400 via-red-500 to-purple-600 rounded-lg p-1"></i>
+                        <span class="font-bold">Instagram Post</span>
+                    </div>
+                    <div class="flex-grow bg-gray-800 rounded-2xl p-3">
+                        <p class="text-sm mb-3"><span class="font-bold">your_account</span> 마지막 카드가 뒤집히는 순간! ♠️ #포커 #토너먼트 #올인 #짜릿함 ... <span class="text-gray-400">더 보기</span></p>
+                        <div class="relative w-full aspect-video bg-gray-700 rounded-xl overflow-hidden">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/2PHJRXbHI5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="mt-3 text-sm text-gray-300 px-1">
+                            <div class="flex justify-between items-center text-xl">
+                                <div class="space-x-4">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-regular fa-comment"></i>
+                                    <i class="fa-regular fa-paper-plane"></i>
+                                </div>
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+                            <p class="text-xs text-gray-400 mt-2">좋아요 25,813개</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TikTok 카드 -->
+                <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-3xl p-4 flex flex-col transform hover:-translate-y-2 transition-transform duration-300">
+                    <div class="flex items-center mb-3">
+                        <i class="fa-brands fa-tiktok text-2xl mr-3"></i>
+                        <span class="font-bold">TikTok</span>
+                    </div>
+                     <div class="flex-grow bg-gray-800 rounded-2xl p-3">
+                        <p class="text-sm mb-3"><span class="font-bold">@your_account</span> 이게 블러핑이었다고? 🤣 표정 연기 대박 #포커페이스 #블러핑 #토너먼트 #레전드</p>
+                        <div class="relative w-full aspect-video bg-gray-700 rounded-xl overflow-hidden">
+                           <iframe width="100%" height="100%" src="https://www.youtube.com/embed/g0x0RJdrbkI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="mt-3 text-sm text-gray-300 px-1">
+                            <div class="flex items-center text-xs">
+                                <i class="fa-solid fa-music mr-2"></i>
+                                <span>오리지널 사운드 - your_account</span>
+                            </div>
+                            <div class="flex justify-around items-center mt-3 text-2xl pt-2">
+                                <i class="fa-solid fa-heart text-red-500"></i>
+                                <i class="fa-solid fa-comment"></i>
+                                <i class="fa-solid fa-share"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Facebook 카드 -->
+                <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-3xl p-4 flex flex-col transform hover:-translate-y-2 transition-transform duration-300">
+                     <div class="flex items-center mb-3">
+                        <i class="fa-brands fa-facebook text-blue-500 text-3xl mr-3"></i>
+                        <span class="font-bold">Facebook</span>
+                    </div>
+                    <div class="flex-grow bg-gray-800 rounded-2xl p-3">
+                         <div class="text-sm mb-3">
+                            <p><span class="font-bold">포커 채널 페이지</span></p>
+                            <p class="text-xs text-gray-400">1시간 전</p>
+                        </div>
+                        <p class="text-sm mb-3">
+                            이번 토너먼트 최고의 명장면! 팟(Pot)이 1억을 넘어갔던 바로 그 핸드를 분석해봤습니다. 🧐<br>
+                            전체 영상은 유튜브에서 확인하세요!
+                        </p>
+                        <div class="relative w-full aspect-video bg-gray-700 rounded-xl overflow-hidden">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Hm4bYV-ctFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="flex justify-between items-center text-gray-400 text-sm mt-3 px-2">
+                            <span>👍❤️😮 2.1천</span>
+                            <span>댓글 152개 · 공유 340회</span>
+                        </div>
+                        <div class="border-t border-gray-700 mt-2 pt-2 flex justify-around">
+                            <button class="w-full text-center py-1 rounded-lg hover:bg-gray-700"><i class="fa-regular fa-thumbs-up mr-2"></i>좋아요</button>
+                            <button class="w-full text-center py-1 rounded-lg hover:bg-gray-700"><i class="fa-regular fa-message mr-2"></i>댓글 달기</button>
+                            <button class="w-full text-center py-1 rounded-lg hover:bg-gray-700"><i class="fa-solid fa-share mr-2"></i>공유하기</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- X (Twitter) 카드 -->
+                <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-3xl p-4 flex flex-col transform hover:-translate-y-2 transition-transform duration-300">
+                     <div class="flex items-center mb-3">
+                        <i class="fa-brands fa-xing text-3xl mr-3"></i>
+                        <span class="font-bold">X (Twitter)</span>
+                    </div>
+                    <div class="flex-grow bg-gray-800 rounded-2xl p-3">
+                        <div class="flex items-start">
+                             <img src="https://placehold.co/48x48/7c3aed/ffffff?text=P" alt="profile" class="rounded-full mr-3">
+                             <div>
+                                <div class="flex items-center">
+                                    <span class="font-bold mr-1">Poker King</span>
+                                    <span class="text-gray-400">@poker_king · 5분</span>
+                                </div>
+                                <p class="text-sm mt-1">
+                                    파이널 테이블, 우승을 결정지은 마지막 핸드! 🏆 짜릿한 순간을 GIF로 만나보세요. 풀영상은 곧 공개됩니다!
+                                    <span class="text-blue-400">#포커 #우승 #파이널테이블 #챔피언</span>
+                                </p>
+                                <div class="mt-3 w-full aspect-video bg-gray-700 rounded-2xl overflow-hidden">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Rzb7eaRigbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+                                <div class="flex justify-between text-gray-500 mt-3 text-sm max-w-sm">
+                                    <span><i class="fa-regular fa-comment mr-1"></i> 102</span>
+                                    <span><i class="fa-solid fa-retweet mr-1"></i> 251</span>
+                                    <span><i class="fa-regular fa-heart mr-1"></i> 1,830</span>
+                                    <span><i class="fa-solid fa-chart-simple mr-1"></i> 52.1K</span>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
+
