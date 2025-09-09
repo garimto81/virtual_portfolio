@@ -61,24 +61,19 @@
             </p>
         </header>
 
-        <!-- 1. 원본 영상 (YouTube) -->
+        <!-- 1. 원본 영상 -->
         <section class="mb-20">
             <h2 class="text-2xl md:text-3xl font-semibold mb-6 flex items-center justify-center">
-                <i class="fa-brands fa-youtube text-red-500 mr-3"></i>
-                원본 영상 (YouTube)
+                <i class="fa-solid fa-video text-blue-500 mr-3"></i>
+                원본 영상
             </h2>
-            <div class="aspect-video w-full max-w-4xl mx-auto bg-black rounded-2xl shadow-2xl shadow-red-500/20 overflow-hidden">
-                <!-- 실제 유튜브 영상 iframe을 여기에 삽입하세요. -->
-                <iframe 
-                    width="100%" 
-                    height="100%" 
-                    src="https://www.youtube.com/embed/KkqwcWT4MF4" 
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerpolicy="strict-origin-when-cross-origin" 
-                    allowfullscreen>
-                </iframe>
+            <div class="aspect-video w-full max-w-4xl mx-auto bg-black rounded-2xl shadow-2xl shadow-blue-500/20 overflow-hidden">
+                <video 
+                    controls 
+                    class="w-full h-full" 
+                    src="https://res.cloudinary.com/dbr6hutiy/video/upload/v001_Shahina_AsQc_Jc9s_2h6dTs5dQs_jzr9ao.mp4"
+                    poster="https://res.cloudinary.com/dbr6hutiy/video/upload/v001_Shahina_AsQc_Jc9s_2h6dTs5dQs_jzr9ao.jpg">
+                </video>
             </div>
             <p class="text-center text-gray-500 mt-4">
                 포커 토너먼트의 주요 핸드와 결정적인 순간들을 담은 하이라이트 영상입니다.
@@ -89,18 +84,18 @@
         <section>
             <h2 class="text-2xl md:text-3xl font-semibold mb-12 text-center">소셜 미디어 활용 예시</h2>
 
-            <div class="max-w-4xl mx-auto flex flex-col gap-16">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
                 <!-- Instagram Post 카드 -->
                 <div class="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-3xl p-4 flex flex-col">
                     <div class="flex items-center mb-3">
                         <i class="fa-brands fa-instagram text-2xl mr-3 bg-gradient-to-r from-yellow-400 via-red-500 to-purple-600 rounded-lg p-1"></i>
-                        <span class="font-bold">Instagram Post</span>
+                        <span class="font-bold">Instagram Reels</span>
                     </div>
                     <div class="flex-grow bg-gray-800 rounded-2xl p-3">
                         <p class="text-sm mb-3"><span class="font-bold">your_account</span> 마지막 카드가 뒤집히는 순간! ♠️ #포커 #토너먼트 #올인 #짜릿함 ... <span class="text-gray-400">더 보기</span></p>
-                        <div class="relative w-full aspect-video bg-gray-700 rounded-xl overflow-hidden">
-                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/2PHJRXbHI5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <div class="relative w-full aspect-[9/16] bg-gray-700 rounded-xl overflow-hidden">
+                            <video controls class="w-full h-full object-cover" src="https://res.cloudinary.com/dbr6hutiy/video/upload/Sequence_02_1_zy7kyj.mp4" poster="https://res.cloudinary.com/dbr6hutiy/video/upload/Sequence_02_1_zy7kyj.jpg"></video>
                         </div>
                         <div class="mt-3 text-sm text-gray-300 px-1">
                             <div class="flex justify-between items-center text-xl">
@@ -124,8 +119,8 @@
                     </div>
                      <div class="flex-grow bg-gray-800 rounded-2xl p-3">
                         <p class="text-sm mb-3"><span class="font-bold">@your_account</span> 이게 블러핑이었다고? 🤣 표정 연기 대박 #포커페이스 #블러핑 #토너먼트 #레전드</p>
-                        <div class="relative w-full aspect-video bg-gray-700 rounded-xl overflow-hidden">
-                           <iframe width="100%" height="100%" src="https://www.youtube.com/embed/g0x0RJdrbkI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <div class="relative w-full aspect-[9/16] bg-gray-700 rounded-xl overflow-hidden">
+                           <video controls class="w-full h-full object-cover" src="https://res.cloudinary.com/dbr6hutiy/video/upload/Sequence_02_1_zy7kyj.mp4" poster="https://res.cloudinary.com/dbr6hutiy/video/upload/Sequence_02_1_zy7kyj.jpg"></video>
                         </div>
                         <div class="mt-3 text-sm text-gray-300 px-1">
                             <div class="flex items-center text-xs">
@@ -156,8 +151,8 @@
                             이번 토너먼트 최고의 명장면! 팟(Pot)이 1억을 넘어갔던 바로 그 핸드를 분석해봤습니다. 🧐<br>
                             전체 영상은 유튜브에서 확인하세요!
                         </p>
-                        <div class="relative w-full aspect-video bg-gray-700 rounded-xl overflow-hidden">
-                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Hm4bYV-ctFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <div class="relative w-full aspect-[9/16] bg-gray-700 rounded-xl overflow-hidden">
+                            <video controls class="w-full h-full object-cover" src="https://res.cloudinary.com/dbr6hutiy/video/upload/Sequence_02_1_zy7kyj.mp4" poster="https://res.cloudinary.com/dbr6hutiy/video/upload/Sequence_02_1_zy7kyj.jpg"></video>
                         </div>
                         <div class="flex justify-between items-center text-gray-400 text-sm mt-3 px-2">
                             <span>👍❤️😮 2.1천</span>
@@ -186,11 +181,11 @@
                                     <span class="text-gray-400">@poker_king · 5분</span>
                                 </div>
                                 <p class="text-sm mt-1">
-                                    파이널 테이블, 우승을 결정지은 마지막 핸드! 🏆 짜릿한 순간을 GIF로 만나보세요. 풀영상은 곧 공개됩니다!
+                                    파이널 테이블, 우승을 결정지은 마지막 핸드! 🏆 짜릿한 순간을 만나보세요. 풀영상은 곧 공개됩니다!
                                     <span class="text-blue-400">#포커 #우승 #파이널테이블 #챔피언</span>
                                 </p>
-                                <div class="mt-3 w-full aspect-video bg-gray-700 rounded-2xl overflow-hidden">
-                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Rzb7eaRigbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <div class="mt-3 w-full aspect-[9/16] bg-gray-700 rounded-2xl overflow-hidden">
+                                    <video controls class="w-full h-full object-cover" src="https://res.cloudinary.com/dbr6hutiy/video/upload/Sequence_02_1_zy7kyj.mp4" poster="https://res.cloudinary.com/dbr6hutiy/video/upload/Sequence_02_1_zy7kyj.jpg"></video>
                                 </div>
                                 <div class="flex justify-between text-gray-500 mt-3 text-sm max-w-sm">
                                     <span><i class="fa-regular fa-comment mr-1"></i> 102</span>
